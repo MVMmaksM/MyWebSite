@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Поиск анкет";
+}
+<div class="text-center">
+    <h1 class="display-8">@ViewData["Title"]</h1>   
+</div>
+
+<div class="search">
+    <p><h4>Поиск</h4></p>
+    <form method="post" asp-action="SearchAnket" asp-asp-controller="Home">
+        <p>
+            <label>имя</label>
+            <br><input type="text" name="firstName" />
+        </p>
+        <p>
+            <label>фамилия</label>
+            <br><input type="text" name="lastName" />
+        </p>
+        <p>
+            <label>отчество</label>
+            <br><input type="text" name="surName" />
+        </p>
+        <p>
+            <label>год рождения</label>
+            <br><input type="date" name="surName" />
+        </p>
+        <p>
+            <input type="submit" value="Найти"/>
+        </p>
+    </form>
+</div>
+
+
